@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 const projects = [
-  { id: "project1", title: "Project 1", description: "Brief description of project 1", image: "project1.jpg" },
-  { id: "project2", title: "Project 2", description: "Brief description of project 2", image: "project2.jpg" },
-  { id: "project3", title: "Project 3", description: "Brief description of project 3", image: "project3.jpg" }
+  { id: "Grocio", title: "Grocio", description: "Grocio is an AI-powered pantry assistant that tracks inventory, reduces food waste, and simplifies grocery planning. Built with Flutter, it uses Firebase for authentication and Firestore for data storage. OpenAI’s GPT powers recipe suggestions, and a chatbot assists with meal planning. WorkManager and Flutter Local Notifications automate reminders for expiring or low-stock items.", image: `${process.env.PUBLIC_URL}/grocio.png` },
+  { id: "Investment_Advisor", title: "Investment Advisor", description: "Brief description of project 2", image: `${process.env.PUBLIC_URL}/AAPL_Prophet_Prediction.png` },
+  { id: "ECE_Soft", title: "Trustworthy Module Registry ", description: "Brief description of project 3", image: `${process.env.PUBLIC_URL}/Internal Package Management .jpg` }
 ];
 
 const tablaPerformances = [
-  { videoUrl: "https://www.youtube.com/embed/YOUR_VIDEO_ID_1" },
-  { videoUrl: "https://www.youtube.com/embed/YOUR_VIDEO_ID_2" },
-  { videoUrl: "https://www.youtube.com/embed/YOUR_VIDEO_ID_3" }
+  { videoUrl: "https://www.youtube.com/embed/ci5yyxhXsOs" },
+  { videoUrl: "https://www.youtube.com/embed/1Qvl8hJyJwI" },
+  { videoUrl: "https://www.youtube.com/embed/wbTZ3P1mymg" },
 ];
 
 const Home = () => {
@@ -22,8 +22,8 @@ const Home = () => {
         <h1>ARYAN SRIVASTAVA</h1>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/projects">Innovations</Link>
-          <Link to="/tabla">Tabla</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/tabla">Music</Link>
         </nav>
       </header>
 
@@ -31,7 +31,6 @@ const Home = () => {
       <section className="about">
         <div className="about-content">
             <img src={`${process.env.PUBLIC_URL}/your-photo.jpg`} alt="Aryan Srivastava" className="profile-pic" />
-
           <div className="about-text">
             <p>
             I am a professional nerd and a Computer Engineering student at Purdue University with a deep passion for software development and AI/ML. I thrive on building intelligent, scalable solutions, starting from simple technical fixes and growing them into fully operational businesses. My blend of entrepreneurial and technical skills allows me to develop AI-driven applications, automate processes, and optimize decision-making. Beyond tech, I enjoy playing badminton, basketball, and soccer. I also love music, experimenting with Tabla fusion on English songs, combining traditional rhythms with modern beats to create unique soundscapes.
@@ -51,6 +50,9 @@ const Home = () => {
             </Link>
           ))}
         </div>
+        <div className="more-button">
+          <Link to="/projects" className="btn btn-theme">More Projects</Link>
+        </div>
       </section>
 
       {/* Tabla Performance Section */}
@@ -68,9 +70,12 @@ const Home = () => {
             ></iframe>
           ))}
         </div>
+        <div className="more-button">
+          <Link to="/tabla" className="btn btn-theme">More Performances</Link>
+        </div>
       </section>
     </div>
   );
-};
+};  
 
 export default Home;
