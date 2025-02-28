@@ -34,9 +34,7 @@ const Home = () => {
 
           <div className="about-text">
             <p>
-              Aryan is a freshman at Purdue University, pursuing a Bachelor of Engineering in Computer Engineering. 
-              He is an innovator by heart and mind who loves to solve problems using his skills in technology, 
-              robotics, design thinking, and data science.
+            I am a professional nerd and a Computer Engineering student at Purdue University with a deep passion for software development and AI/ML. I thrive on building intelligent, scalable solutions, starting from simple technical fixes and growing them into fully operational businesses. My blend of entrepreneurial and technical skills allows me to develop AI-driven applications, automate processes, and optimize decision-making. Beyond tech, I enjoy playing badminton, basketball, and soccer. I also love music, experimenting with Tabla fusion on English songs, combining traditional rhythms with modern beats to create unique soundscapes.
             </p>
           </div>
         </div>
