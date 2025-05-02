@@ -55,6 +55,24 @@
   text-align: left;
 }
 
+/* Social Media Icons Section */
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Centers the icons */
+  margin-top: 30px; /* Adds some space from the About Me content */
+}
+
+.social-icon {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ff6600; /* Change color on hover */
+}
+
 /* Projects Section */
 .projects {
   text-align: center;
@@ -108,7 +126,7 @@
 
 /* Themed Button */
 .btn-theme {
-  background-color: #ff6600; /* Change this color to match your theme */
+  background-color: #ff6600;
   color: white;
   border: 2px solid #ff6600;
 }

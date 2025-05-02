@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa"; // Import social media icons from react-icons
 import "./Home.css";
 
 const projects = [
@@ -23,19 +24,32 @@ const Home = () => {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/projects">Projects</Link>
-          <Link to="/tabla">Music</Link>
+          <Link to="/Music">Music</Link>
         </nav>
       </header>
 
       {/* About Section */}
       <section className="about">
         <div className="about-content">
-            <img src={`${process.env.PUBLIC_URL}/your-photo.jpg`} alt="Aryan Srivastava" className="profile-pic" />
+          <img src={`${process.env.PUBLIC_URL}/your-photo.jpg`} alt="Aryan Srivastava" className="profile-pic" />
           <div className="about-text">
             <p>
-            I am a professional nerd and a Computer Engineering student at Purdue University with a deep passion for software development and AI/ML. I thrive on building intelligent, scalable solutions, starting from simple technical fixes and growing them into fully operational businesses. My blend of entrepreneurial and technical skills allows me to develop AI-driven applications, automate processes, and optimize decision-making. Beyond tech, I enjoy playing badminton, basketball, and soccer. I also love music, experimenting with Tabla fusion on English songs, combining traditional rhythms with modern beats to create unique soundscapes.
+              I am a professional nerd and a Computer Engineering student at Purdue University with a deep passion for software development and AI/ML. I thrive on building intelligent, scalable solutions, starting from simple technical fixes and growing them into fully operational businesses. My blend of entrepreneurial and technical skills allows me to develop AI-driven applications, automate processes, and optimize decision-making. Beyond tech, I enjoy playing badminton, basketball, and soccer. I also love music, experimenting with Tabla fusion on English songs, combining traditional rhythms with modern beats to create unique soundscapes.
             </p>
           </div>
+        </div>
+
+        {/* Social Media Icons */}
+        <div className="social-icons">
+          <a href="https://www.linkedin.com/in/aryansri0208" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <FaLinkedin size={30} />
+          </a>
+          <a href="https://www.instagram.com/aryansri0208" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <FaInstagram size={30} />
+          </a>
+          <a href="mailto:aryansri0208@gmail.com" className="social-icon">
+            <FaEnvelope size={30} />
+          </a>
         </div>
       </section>
 
@@ -71,11 +85,11 @@ const Home = () => {
           ))}
         </div>
         <div className="more-button">
-          <Link to="/tabla" className="btn btn-theme">More Performances</Link>
+          <Link to="/Music" className="btn btn-theme">More Performances</Link>
         </div>
       </section>
     </div>
   );
-};  
+};
 
 export default Home;

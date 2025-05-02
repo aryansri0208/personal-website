@@ -1,0 +1,75 @@
+/* Music Page Container */
+.music-container {
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+  }
+  
+  /* Music Header */
+  .music-header {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #222;
+  }
+  
+  /* Video Grid */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-top: 50px;
+  }
+  
+  /* Video Card */
+  .video-card {
+    background: #e0e0e0;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Video Info */
+  .video-info {
+    padding: 20px;
+  }
+  
+  .video-info h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .video-info p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .video-grid {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+  
+    .video-info h3 {
+      font-size: 1.4rem;
+    }
+  
+    .video-info p {
+      font-size: 0.9rem;
+    }
+  }
+  

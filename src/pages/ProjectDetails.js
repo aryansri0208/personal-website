@@ -8,7 +8,7 @@ const projectData = {
     subtitle: "AI-Powered Pantry Assistant",
     description: "Grocio is an AI-powered pantry assistant that tracks inventory, reduces food waste, and simplifies grocery planning. Built with Flutter, it uses Firebase for authentication and Firestore for data storage. OpenAI’s GPT powers recipe suggestions, and a chatbot assists with meal planning. WorkManager and Flutter Local Notifications automate reminders for expiring or low-stock items.",
     links: [
-      { text: "GitHub Repository", url: "https://github.com/example/grocio" }
+      { text: "GitHub Repository", url: "https://github.com/aryansri0208/grocio" }
     ],
     gallery: [
       "https://example.com/grocio-image1.jpg",
@@ -21,7 +21,7 @@ const projectData = {
     subtitle: "AI-Based Investment Predictions",
     description: "An AI-driven investment advisory system that predicts stock trends using Prophet forecasting and machine learning models.",
     links: [
-      { text: "GitHub Repository", url: "https://github.com/example/investment-advisor" }
+      { text: "GitHub Repository", url: "https://github.com/aryansri008/investment-advisor" }
     ],
     gallery: [
       "https://example.com/investment-image1.jpg",
