@@ -44,15 +44,22 @@ const Projects = () => {
        <Nav />
 
       {/* Research & Projects Header */}
-      <h2>Innovations & Research Projects</h2>
+      <h2>My Projects and Publications</h2>
 
       {/* Project Cards */}
       <div className="projects-list">
         {projects.map((project) => (
           <div key={project.id} className="project-card">
-            <img src={project.image} alt={project.title} className="project-image" />
+            {project.image && (
+              <img src={project.image} alt={project.title} className="project-image" />
+            )}
             <div className="project-info">
-              <Link to={`/projects/${project.id}`} className="project-title">{project.title}</Link>
+              <Link 
+                to={`/projects/${project.id}`} 
+                className={`project-title ${project.highlight ? 'highlight' : ''}`}
+              >
+                {project.title}
+              </Link>
               <p className="project-description">{project.description}</p>
             </div>
           </div>

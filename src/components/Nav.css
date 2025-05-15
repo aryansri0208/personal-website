@@ -12,83 +12,94 @@
     left: 0;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow-x: hidden; /* Prevent overflow */
-    white-space: nowrap; /* Ensure no wrapping */
-  }
-  
-  /* Site Title */
-  .site-title {
+}
+
+/* Site Title */
+.site-title {
+    font-family: Arial, sans-serif;
     font-size: 2rem;
     font-weight: bold;
     color: white;
-    margin-right: 40px;  /* Space between title and nav links */
-    text-align: left;  /* Align site title to the left */
-    flex-grow: 1; /* Allows the title to grow and push the links to the right */
-  }
-  
-  /* Navigation Links */
-  .nav-links {
+}
+
+/* Navigation Links */
+.nav-links {
     display: flex;
     gap: 20px;
     margin-left: auto;  /* Pushes the links to the right */
     flex-wrap: nowrap;  /* Prevents wrapping of links */
     overflow: hidden; /* Prevents navbar items from overflowing */
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease;
-  }
-  
-  .nav-link:hover, .nav-link.active {
+}
+
+.nav-link:hover, .nav-link.active {
     color: #ff6600;
-  }
-  
-  /* Social Media Icons */
-  .social-icons {
+}
+
+/* Social Media Icons */
+.social-icons {
     display: flex;
     gap: 10px;
     margin-left: 40px; /* Move the social icons away from the nav links */
-  }
-  
-  .social-icon {
+    margin-bottom: 20px;
+}
+
+.social-icon {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-  
-  .social-icon:hover {
+}
+
+.social-icon:hover {
     color: #ff6600; /* Change color on hover */
-  }
-  
-  /* Heading */
-  h2 {
+}
+
+/* Heading */
+h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
     color: #222;
     margin-top: 100px; /* Adjusted to prevent overlap with fixed navbar */
-  }
-  
-  /* Mobile Responsiveness */
-  @media (max-width: 768px) {
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
     .top-nav {
-      padding: 15px 10px;
+        padding: 15px 10px;
     }
-  
+
     .nav-links {
-      gap: 10px;
+        gap: 10px;
     }
-  
+
     .nav-link {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  
+
     .social-icons {
-      gap: 15px;
-      margin-left: 20px; /* Reduce space on mobile */
+        gap: 15px;
+        margin-left: 20px; /* Reduce space on mobile */
     }
-  }
+}
+
+/* Add to your index.css or App.css */
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px 20px;
+}
   

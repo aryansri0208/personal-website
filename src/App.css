@@ -36,3 +36,14 @@ body {
   justify-content: center;
   gap: 20px;
 }
+
+/* Add this to your App.css */
+.page-title {
+  font-family: Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #222;
+  margin: 40px 0;
+  text-align: center;
+}

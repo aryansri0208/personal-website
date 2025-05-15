@@ -48,106 +48,111 @@
   color: #ff6600;
 }
 
-/* Heading */
-h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #222;
-  margin-top: 20px; /* Adjusted to prevent overlap with fixed navbar */
-}
-
 /* Project List */
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #f4f4f4; /* Matching your website's background */
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
-  background: #e0e0e0;
-  color: #333;
-  border-radius: 10px;
+  background: white; /* White background like your existing projects */
+  color: #000; /* Black text to match your header */
+  border-radius: 10px; /* Matching your existing border-radius */
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
   cursor: pointer;
-  width: 100%;
-  max-width: 350px; /* Reduce card width */
+  break-inside: avoid;
   height: fit-content;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
   width: 100%;
-  height: 250px;
+  height: auto;
   object-fit: cover;
-  border-bottom: 5px solid #888;
+  display: block;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .project-info {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left; /* Align text to left for better readability */
 }
 
 .project-title {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #222;
+  font-family: Arial, sans-serif; /* Matching your website's font */
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
   text-decoration: none;
+  line-height: 1.2;
+  margin: 0;
 }
 
 .project-title:hover {
-  text-decoration: underline;
+  color: #333; /* Subtle hover effect */
 }
 
 .project-description {
-  margin-top: 10px;
   font-size: 1rem;
   line-height: 1.5;
-  color: #555;
+  color: #666;
+  margin: 0;
+  font-weight: normal;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .projects-list {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 15px;
   }
 
   .project-card {
-    width: 100%;
-    max-width: 400px; /* Ensure the cards take full width on mobile */
+    margin: 0 10px;
   }
+}
 
-  .project-title {
-    font-size: 1.4rem;
+@media (max-width: 480px) {
+  .projects-list {
+    grid-template-columns: 1fr;
   }
+}
 
-  .project-description {
-    font-size: 0.9rem;
-  }
+/* Container styles to match your website */
+.container {
+  text-align: center;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px; /* Reduced padding-top */
+}
 
-  .project-image {
-    height: 200px;
-  }
-
-  .top-nav {
-    padding: 15px 10px;
-  }
-
-  .nav-links {
-    gap: 10px;
-  }
-
-  .nav-link {
-    font-size: 1rem;
-  }
+/* Page Title */
+.page-title, h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-top: 20px; /* Reduced from previous value */
+    margin-bottom: 40px;
+    text-align: center;
 }

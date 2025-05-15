@@ -1,12 +1,13 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import Nav from "../components/NavBar";
 import "./ProjectDetails.css";
 
 const projectData = {
   Grocio: {
     title: "Grocio",
     subtitle: "AI-Powered Pantry Assistant",
-    description: "Grocio is an AI-powered pantry assistant that tracks inventory, reduces food waste, and simplifies grocery planning. Built with Flutter, it uses Firebase for authentication and Firestore for data storage. OpenAI’s GPT powers recipe suggestions, and a chatbot assists with meal planning. WorkManager and Flutter Local Notifications automate reminders for expiring or low-stock items.",
+    description: "Grocio is an AI-powered pantry assistant that tracks inventory, reduces food waste, and simplifies grocery planning. Built with Flutter, it uses Firebase for authentication and Firestore for data storage. OpenAI's GPT powers recipe suggestions, and a chatbot assists with meal planning. WorkManager and Flutter Local Notifications automate reminders for expiring or low-stock items.",
     links: [
       { text: "GitHub Repository", url: "https://github.com/aryansri0208/grocio" }
     ],
@@ -46,39 +47,66 @@ const ProjectDetails = () => {
   const { id } = useParams();
   const project = projectData[id];
 
-  return project ? (
-    <div className="project-details-container">
-      {/* Navigation Bar */}
-      <nav className="project-nav">
-        <Link to="/" className="nav-link">Home</Link>
-        <Link to="/projects" className="nav-link">Projects</Link>
-        <Link to="/tabla" className="nav-link">Music</Link>
-      </nav>
-
-      <h1 className="project-title">{project.title}</h1>
-      <h2 className="project-subtitle">{project.subtitle}</h2>
-      <p className="project-description">{project.description}</p>
-
-      {/* Links Section */}
-      <div className="project-links">
-        {project.links.map((link, index) => (
-          <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className="btn btn-theme">{link.text}</a>
-        ))}
+  if (!project) {
+    return (
+      <div className="container">
+        <Nav />
+        <h2 className="not-found">Project Not Found</h2>
       </div>
+    );
+  }
 
-      {/* Gallery Section */}
-      <div className="project-gallery">
-        {project.gallery.map((media, index) => (
-          media.includes("youtube") ? (
-            <iframe key={index} width="560" height="315" src={media} title={`Video ${index + 1}`} allowFullScreen className="gallery-video"></iframe>
-          ) : (
-            <img key={index} src={media} alt={`Gallery Image ${index + 1}`} className="gallery-image" />
-          )
-        ))}
+  return (
+    <div className="container">
+      <Nav />
+      <div className="project-details-container">
+        <h1 className="project-title">{project.title}</h1>
+        <h2 className="project-subtitle">{project.subtitle}</h2>
+        
+        <div className="project-content">
+          <p className="project-description">{project.description}</p>
+
+          {/* Links Section */}
+          <div className="project-links">
+            {project.links.map((link, index) => (
+              <a 
+                key={index} 
+                href={link.url} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-theme"
+              >
+                {link.text}
+              </a>
+            ))}
+          </div>
+
+          {/* Gallery Section */}
+          <div className="project-gallery">
+            {project.gallery.map((media, index) => (
+              media.includes("youtube") ? (
+                <iframe 
+                  key={index} 
+                  width="560" 
+                  height="315" 
+                  src={media} 
+                  title={`Video ${index + 1}`} 
+                  allowFullScreen 
+                  className="gallery-video"
+                ></iframe>
+              ) : (
+                <img 
+                  key={index} 
+                  src={media} 
+                  alt={`Gallery Image ${index + 1}`} 
+                  className="gallery-image" 
+                />
+              )
+            ))}
+          </div>
+        </div>
       </div>
     </div>
-  ) : (
-    <h2 className="not-found">Project Not Found</h2>
   );
 };
 

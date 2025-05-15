@@ -34,8 +34,9 @@
 .about {
   background-color: #333;
   color: white;
-  padding: 40px;
+  padding: 40px 40px 30px;
   text-align: center;
+  font-size: 18px;
 }
 
 .about-content {
@@ -59,8 +60,8 @@
 .social-icons {
   display: flex;
   gap: 20px;
-  justify-content: center; /* Centers the icons */
-  margin-top: 30px; /* Adds some space from the About Me content */
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .social-icon {
@@ -76,14 +77,28 @@
 /* Projects Section */
 .projects {
   text-align: center;
-  margin: 40px 0;
+  margin: 20px 0;
+  padding: 20px 0;
+  background-color: #f4f4f4;
+}
+
+.projects h2 {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #000;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .project-card {
@@ -96,15 +111,58 @@
 
 .project-card img {
   width: 100%;
-  border-radius: 8px;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-card p {
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 15px 0;
+  padding: 0 15px;
+}
+
+.more-button {
+  margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+  
+  .project-card img {
+    height: 180px;
+  }
 }
 
 /* Tabla Section */
 .tabla {
   background-color: black;
-  color: rgb(255, 255, 255);
-  padding: 20px;
+  color: white;
+  padding: 50px;
   text-align: center;
+  margin-top: 20px;
+}
+
+.tabla h2 {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
 }
 
 .tabla-slider {
@@ -129,11 +187,24 @@
 .btn-theme {
   background-color: #ff6600;
   color: white;
-  border: 2px solid #ff6600;
+  border: 2px solid white;
 }
 
 .btn-theme:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* More Performances button specific styling */
+.tabla .btn-theme {
+  margin-top: 30px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.tabla .btn-theme:hover {
   background-color: white;
-  color: #ff6600;
-  border: 2px solid #ff6600;
+  color: black;
 }
