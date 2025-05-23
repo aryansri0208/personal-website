@@ -37,15 +37,18 @@
 .project-content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
+    text-align: left;
 }
 
 /* Project Description */
 .project-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: #444;
-    text-align: justify;
-    margin-bottom: 30px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-family: Arial, sans-serif;
 }
 
 /* Project Links */
@@ -106,6 +109,63 @@
     margin-top: 40px;
 }
 
+/* Project Content Styles */
+.project-heading {
+    color: #222;
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.project-heading[level="2"] {
+    font-size: 1rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.project-heading[level="3"] {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 1.5rem 0 1rem;
+    font-weight: bold;
+}
+
+.project-list {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.project-list li {
+    position: relative;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    color: #444;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.project-list li:before {
+    content: "•";
+    position: absolute;
+    left: -1.5rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Nested list items */
+.project-list li li {
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.project-list li li:before {
+    content: "◦";
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .project-details-wrapper {
@@ -124,12 +184,32 @@
         font-size: 1.3rem;
     }
 
+    .project-heading[level="2"] {
+        font-size: 0.95rem;
+    }
+
+    .project-heading[level="3"] {
+        font-size: 1.2rem;
+    }
+
     .project-description {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .btn-theme {
         padding: 10px 20px;
         font-size: 0.9rem;
+    }
+
+    .project-list li {
+        font-size: 0.9rem;
+    }
+
+    .project-list li li {
+        font-size: 0.85rem;
+    }
+
+    .project-list {
+        padding-left: 1rem;
     }
 }
