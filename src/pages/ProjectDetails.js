@@ -188,35 +188,178 @@ const projectData = {
     ]
   },
   ECE_Soft: {
-    title: "Trustworthy Module Registry",
-    subtitle: "Secure Internal Package Management",
+    title: "Package Registrar CLI Tool",
+    subtitle: "Trustworthy Module Registry for Node.js Packages",
     description: [
       {
         type: "paragraph",
-        content: "A reliable and secure internal package management system for software teams, enhancing module security and maintainability."
+        content: "The Package Registrar CLI Tool is a sophisticated command-line application designed to evaluate and assess the trustworthiness of Node.js modules. It provides developers with a comprehensive analysis of packages based on multiple metrics, helping them make informed decisions about module adoption and ensuring project stability."
       },
       {
         type: "heading",
         level: 3,
-        content: "Key Features"
+        content: "Package Evaluation Metrics"
+      },
+      {
+        type: "paragraph",
+        content: "The tool analyzes packages based on five key metrics that determine package reliability and usability:"
       },
       {
         type: "list",
         items: [
-          "Secure package verification and validation",
-          "Internal module registry management",
-          "Version control and dependency tracking",
-          "Team collaboration features",
-          "Automated security scanning"
+          "Ramp-Up Time: Evaluates how quickly a new developer can become productive with the package",
+          "Correctness: Assesses the reliability and accuracy of the package's functionality",
+          "Bus Factor: Measures the risk associated with the number of maintainers",
+          "Responsive Maintainers: Evaluates how actively and quickly maintainers respond to issues",
+          "License Compatibility: Ensures the package's license aligns with project requirements"
         ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "AWS Integration"
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "DynamoDB Implementation"
+      },
+      {
+        type: "list",
+        items: [
+          "Package Metadata Storage:",
+          "Package name and version tracking",
+          "Unique identifiers management",
+          "S3 storage keys integration",
+          "Upload types and URLs handling",
+          "Creation timestamps monitoring",
+          "Advanced Querying Features:",
+          "Regex-based package searches",
+          "Version-based filtering",
+          "Pagination support",
+          "Efficient batch operations"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "S3 Implementation"
+      },
+      {
+        type: "list",
+        items: [
+          "Secure file uploads and downloads",
+          "Content type management",
+          "Efficient bucket management",
+          "Dynamic file URL generation",
+          "Automated cleanup processes"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "API Architecture"
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Package Management Endpoints"
+      },
+      {
+        type: "list",
+        items: [
+          "Package Upload: Handles package uploads with metadata extraction",
+          "Package Retrieval: Provides efficient package downloading and metadata access",
+          "Package Updates: Manages version updates and metadata modifications",
+          "Package Deletion: Handles package removal and cleanup"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Advanced Features"
+      },
+      {
+        type: "list",
+        items: [
+          "Version Control: Implements semantic versioning validation",
+          "Cost Calculation: Analyzes package costs and dependencies",
+          "Package Optimization: Provides tools for package size and performance optimization",
+          "Dependency Management: Handles package dependencies and their costs"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Technical Implementation"
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Core Technologies"
+      },
+      {
+        type: "list",
+        items: [
+          "Node.js: Primary runtime environment",
+          "TypeScript: For type-safe development",
+          "Express.js: API framework",
+          "AWS SDK: For cloud service integration"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Key Components"
+      },
+      {
+        type: "list",
+        items: [
+          "CLI Interface:",
+          "Command-line argument parsing",
+          "User-friendly output formatting",
+          "Error handling and logging",
+          "Package Processing:",
+          "ZIP file handling",
+          "Metadata extraction",
+          "Version validation",
+          "Cost calculation",
+          "Storage Management:",
+          "DynamoDB integration",
+          "S3 file management",
+          "Cache optimization"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Security and Performance"
+      },
+      {
+        type: "list",
+        items: [
+          "Security Features:",
+          "Comprehensive input validation",
+          "Robust error management and logging",
+          "Secure access to AWS resources",
+          "Data integrity checks",
+          "Performance Optimization:",
+          "Efficient caching mechanisms",
+          "Batch processing support",
+          "Asynchronous operations",
+          "Optimized AWS resource usage"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "This comprehensive system provides developers with the tools they need to make informed decisions about package adoption while ensuring the security and reliability of their Node.js applications."
       }
     ],
     links: [
-      { text: "Project Documentation", url: "https://example.com/docs" }
+      { text: "GitHub Repository", url: "https://github.com/example/ece-soft" }
     ],
     gallery: [
-      "https://example.com/ece-soft-image1.jpg",
-      "https://www.youtube.com/embed/example-video3"
+      `${process.env.PUBLIC_URL}/ece-soft-image1.jpg`
     ]
   },
   ChessAI: {
@@ -1141,6 +1284,533 @@ const projectData = {
     ],
     gallery: [
       `${process.env.PUBLIC_URL}/ECE570.png`
+    ]
+  },
+  ECE39595: {
+    title: "Object Oriented Programming (C++) Course Work",
+    subtitle: "Hash Map and Chess Game Implementation",
+    description: [
+      {
+        type: "paragraph",
+        content: "This coursework demonstrates advanced Object-Oriented Programming concepts through two major projects: a generic hash map implementation and a complete chess game system. The projects showcase practical applications of OOP principles including inheritance, polymorphism, and encapsulation."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Project 1 & 2: Hash Map Implementation"
+      },
+      {
+        type: "paragraph",
+        content: "A sophisticated implementation of a generic hash map data structure with dynamic resizing capabilities, demonstrating modern C++ features and memory management techniques."
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Hash List Implementation (hash_list.h/hpp)"
+      },
+      {
+        type: "list",
+        items: [
+          "Linked list-based implementation for handling hash collisions",
+          "Generic template class supporting any key-value pair types",
+          "Node structure with key, value, and next pointer",
+          "Basic operations: insert, get_value, remove",
+          "Iterator functionality for traversing the list",
+          "Memory management with proper constructors and destructors"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Hash Map Implementation (hash_map.h/hpp)"
+      },
+      {
+        type: "list",
+        items: [
+          "Template-based implementation for type flexibility",
+          "Dynamic capacity management with load factors",
+          "Automatic resizing when load factors are exceeded",
+          "Key operations:",
+          "Insert with collision handling",
+          "Get value with optional return type",
+          "Remove with proper cleanup",
+          "Key enumeration and sorting",
+          "Memory management with deep copying",
+          "Bucket size tracking for performance analysis"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Technical Highlights"
+      },
+      {
+        type: "list",
+        items: [
+          "Uses modern C++ features (std::optional, templates)",
+          "Implements the 'Rule of Three' (copy constructor, assignment operator, destructor)",
+          "Dynamic resizing with predefined capacity steps (209, 1021, 2039)",
+          "Efficient collision handling using chaining",
+          "Memory safety with proper cleanup"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Project 3: Chess Game Implementation"
+      },
+      {
+        type: "paragraph",
+        content: "A complete chess game implementation demonstrating advanced OOP concepts through a practical application, featuring comprehensive game logic and piece management."
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Base Chess Piece (ChessPiece.hh)"
+      },
+      {
+        type: "list",
+        items: [
+          "Abstract base class defining the interface for all chess pieces",
+          "Pure virtual methods for movement validation",
+          "Position tracking",
+          "Color and type management",
+          "Unicode string representation"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Derived Piece Classes"
+      },
+      {
+        type: "list",
+        items: [
+          "Individual implementations for each chess piece:",
+          "KingPiece: Special movement and check rules",
+          "QueenPiece: Diagonal and straight movement",
+          "RookPiece: Horizontal and vertical movement",
+          "BishopPiece: Diagonal movement",
+          "KnightPiece: L-shaped movement",
+          "PawnPiece: Special first move and capture rules"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Chess Board (ChessBoard.hh)"
+      },
+      {
+        type: "list",
+        items: [
+          "Central game management class",
+          "2D vector-based board representation",
+          "Turn management",
+          "Move validation and execution",
+          "Threat detection",
+          "Special move handling (en passant)",
+          "Board display functionality"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Technical Highlights"
+      },
+      {
+        type: "list",
+        items: [
+          "Comprehensive inheritance hierarchy",
+          "Polymorphic behavior through virtual functions",
+          "Advanced game logic implementation",
+          "Memory management for piece allocation",
+          "Board state tracking and validation",
+          "Special chess rules implementation (en passant, check)"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Game Features"
+      },
+      {
+        type: "list",
+        items: [
+          "Complete chess rules implementation",
+          "Turn-based gameplay",
+          "Move validation",
+          "Threat detection",
+          "Special move handling",
+          "Board visualization",
+          "Piece movement patterns",
+          "Check and checkmate detection"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "This coursework provides a comprehensive exploration of OOP concepts through practical implementations, from fundamental data structures to complex game logic, demonstrating how these concepts are applied in real-world scenarios."
+      }
+    ],
+    links: [
+      { text: "GitHub Repository", url: "https://github.com/aryansri0208/ECE39595" }
+    ],
+    gallery: [
+      `${process.env.PUBLIC_URL}/ECE39595.png`
+    ]
+  },
+  ECE270: {
+    title: "FPGA and SystemVerilog Development Projects",
+    subtitle: "Digital Systems Design and Implementation",
+    description: [
+      {
+        type: "paragraph",
+        content: "A comprehensive series of projects focused on FPGA development and digital systems design using SystemVerilog. These projects demonstrate practical implementation of various digital systems, from basic communication protocols to complex game development on FPGA hardware."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Hardware Platform"
+      },
+      {
+        type: "list",
+        items: [
+          "FPGA Board: ICE40HX8K",
+          "Development Environment: SystemVerilog, GTKWave, Make-based build system",
+          "Key Features: UART, VGA, GPIO interfaces"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Lab 4: UART Communication on FPGA"
+      },
+      {
+        type: "list",
+        items: [
+          "Implemented a complete UART system on the ICE40HX8K FPGA",
+          "Designed transmitter and receiver modules in SystemVerilog",
+          "Implemented baud rate generator using clock division",
+          "Created state machines for data transmission and reception",
+          "Developed testbenches for verification",
+          "Synthesized and implemented on FPGA hardware",
+          "Verified timing constraints and pin mapping"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Lab 6: Advanced UART System"
+      },
+      {
+        type: "list",
+        items: [
+          "Enhanced UART implementation with additional features",
+          "Implemented FIFO buffers for data handling",
+          "Added error detection and correction",
+          "Created more sophisticated testbenches",
+          "Optimized timing and resource utilization",
+          "Performed post-synthesis timing analysis"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Lab 9: FSM Implementation"
+      },
+      {
+        type: "list",
+        items: [
+          "Designed complex Finite State Machines in SystemVerilog",
+          "Created sequence detectors using state machines",
+          "Implemented synchronous and asynchronous resets",
+          "Developed state encoding and optimization",
+          "Built comprehensive testbenches",
+          "Verified state transitions and timing",
+          "Integrated with UART for monitoring"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Lab 10: Custom Processor Design"
+      },
+      {
+        type: "list",
+        items: [
+          "Designed and implemented a custom processor on FPGA",
+          "Developed ALU with custom operations",
+          "Created control unit with instruction decoding",
+          "Implemented register file and memory interface",
+          "Designed instruction set architecture",
+          "Built processor pipeline",
+          "Created testbenches for instruction verification",
+          "Synthesized and verified on FPGA"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Lab 11: Lunar Lander Game"
+      },
+      {
+        type: "list",
+        items: [
+          "Implemented a complete game on FPGA",
+          "Designed VGA display controller",
+          "Created game state machine",
+          "Implemented user input handling",
+          "Developed game physics in hardware",
+          "Built memory interface for game data",
+          "Created real-time display updates",
+          "Integrated with custom processor"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Technical Skills in FPGA Development"
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "SystemVerilog Programming"
+      },
+      {
+        type: "list",
+        items: [
+          "RTL Design",
+          "Testbench Development",
+          "State Machine Implementation",
+          "Module Hierarchy Design"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "FPGA Implementation"
+      },
+      {
+        type: "list",
+        items: [
+          "Synthesis and Place & Route",
+          "Timing Constraints",
+          "Pin Mapping",
+          "Resource Utilization",
+          "Clock Domain Management"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Verification Techniques"
+      },
+      {
+        type: "list",
+        items: [
+          "Waveform Analysis",
+          "Testbench Development",
+          "Timing Verification",
+          "Functional Testing",
+          "Hardware-Software Co-Verification"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Hardware Interfaces"
+      },
+      {
+        type: "list",
+        items: [
+          "UART Communication",
+          "VGA Display",
+          "GPIO Control",
+          "Memory Interfaces",
+          "Clock Generation"
+        ]
+      },
+      {
+        type: "heading",
+        level: 4,
+        content: "Design Methodologies"
+      },
+      {
+        type: "list",
+        items: [
+          "Modular Design",
+          "State Machine Design",
+          "Pipeline Implementation",
+          "Resource Optimization",
+          "Timing Closure"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "This series of projects demonstrates comprehensive experience in FPGA development, from basic digital circuits to complex systems, showcasing both theoretical knowledge and practical implementation skills in hardware design using SystemVerilog."
+      }
+    ],
+    links: [
+      { text: "GitHub Repository", url: "https://github.com/aryansri0208/ECE270" }
+    ],
+    gallery: [
+      `${process.env.PUBLIC_URL}/ECE270.png`
+    ]
+  },
+  ECE20875: {
+    title: "Python Programming and Data Science",
+    subtitle: "Comprehensive Data Analysis and Machine Learning Implementation",
+    description: [
+      {
+        type: "paragraph",
+        content: "This course covers a wide range of topics in data science and programming, from basic probability and statistics to advanced machine learning and natural language processing. Each homework assignment focuses on different aspects of data analysis and programming concepts."
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Homework 2: Histogram and Birthday Problem"
+      },
+      {
+        type: "list",
+        items: [
+          "Focuses on probability and statistics",
+          "Includes histogram testing and birthday paradox problems",
+          "Main file: homework2.py with test files for histograms and birthday problems"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Homework 3: Statistical Distributions"
+      },
+      {
+        type: "list",
+        items: [
+          "Works with various probability distributions (normal, uniform, exponential, Wald)",
+          "Includes data analysis of different distributions",
+          "Two main problems in Problem1.py and Problem2.py",
+          "Uses sample data files for different distributions"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Homework 4: Function Composition and Stencils"
+      },
+      {
+        type: "list",
+        items: [
+          "Problem 1: Function composition, mapping, and repetition",
+          "Problem 2: Stencil operations and box filters",
+          "Focuses on functional programming concepts"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Homework 5: Data Analysis"
+      },
+      {
+        type: "list",
+        items: [
+          "Works with district data and park survey data",
+          "Includes problem2.py and problem3.py",
+          "Has a detailed writeup (Writeup.pdf)"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Homework 6: Single Problem Set"
+      },
+      {
+        type: "list",
+        items: [
+          "Contains problems.py with various programming challenges",
+          "Focused assignment with multiple problems in one file"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Homework 7: Polynomial Fitting and Regularization"
+      },
+      {
+        type: "list",
+        items: [
+          "Works with stock data (AAPL.csv, GOOG.csv)",
+          "Includes polynomial fitting (polyfit.py)",
+          "Regularization and cross-validation (regularize-cv.py)",
+          "Has visualization outputs (fig1.png, fig2.png, fig3.png)",
+          "Includes a detailed writeup"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Homework 8: Natural Language Processing"
+      },
+      {
+        type: "list",
+        items: [
+          "Works with ngrams and lecture data",
+          "Multiple implementation attempts (try.py, try2.py)",
+          "Includes helper functions and main homework files (hw8_1.py, hw8_2.py)"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Homework 9: Clustering Algorithms"
+      },
+      {
+        type: "list",
+        items: [
+          "Implements K-means clustering (kmeans.py)",
+          "Gaussian Mixture Models (gmm.py)",
+          "Point class implementation (point.py)",
+          "Works with clustering data (gmm_data_x1.csv, gmm_data_x2.csv)"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Homework 10: Machine Learning with Fashion MNIST"
+      },
+      {
+        type: "list",
+        items: [
+          "Works with Fashion MNIST dataset",
+          "Includes utility functions (utils.py)",
+          "Main implementation in hw10.py",
+          "Has visualization output (FMNIST.png)"
+        ]
+      },
+      {
+        type: "heading",
+        level: 3,
+        content: "Course Coverage"
+      },
+      {
+        type: "list",
+        items: [
+          "Probability and Statistics (HW2, HW3)",
+          "Functional Programming (HW4)",
+          "Data Analysis (HW5)",
+          "Machine Learning (HW7, HW9, HW10)",
+          "Natural Language Processing (HW8)",
+          "Various programming concepts and algorithms throughout"
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "This course provides a comprehensive introduction to data science and programming concepts, with hands-on experience in implementing various algorithms and analyzing real-world datasets. The assignments progress from basic programming concepts to advanced machine learning techniques, providing a solid foundation in data science and programming."
+      }
+    ],
+    links: [
+      { text: "GitHub Repository", url: "https://github.com/aryansri0208/ECE20875" }
+    ],
+    gallery: [
+      `${process.env.PUBLIC_URL}/ECE20875.png`
     ]
   }
 };
