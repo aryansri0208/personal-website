@@ -181,10 +181,10 @@ const projectData = {
     ],
     links: [
       { text: "GitHub Repository", url: "https://github.com/aryansri0208/stockadvisor" },
-      { text: "Demo Video", url: "https://drive.google.com/file/d/1-2YQZQZQZQZQZQZQZQZQZQZQZQZQZQZQZ/view?usp=sharing" }
+      { text: "Demo Video", url: "https://drive.google.com/file/d/1Mn1e9o7z5Ql0u09iYEFNn_Tz0X02S8dh/view?usp=sharing" }
     ],
     gallery: [
-      "AAPL_Prophet_Prediction.png"
+      `${process.env.PUBLIC_URL}/AAPL_Prophet_Prediction.png`
     ]
   },
   ECE_Soft: {
@@ -356,10 +356,11 @@ const projectData = {
       }
     ],
     links: [
-      { text: "GitHub Repository", url: "https://github.com/example/ece-soft" }
+      { text: "GitHub Repository", url: "https://github.com/aryansri0208/ECE-46100-Phase-2" },
+      { text: "Project Documentation", url: "https://drive.google.com/file/d/1l_rcPhK-vZN5O31GZLzzKjK1DU5c-3RQ/view?usp=drive_link" }
     ],
     gallery: [
-      `${process.env.PUBLIC_URL}/ece-soft-image1.jpg`
+      `${process.env.PUBLIC_URL}/Internal Package Management .jpg`
     ]
   },
   ChessAI: {
@@ -671,7 +672,10 @@ const projectData = {
       }
     ],
     links: [
-      { text: "GitHub Repository", url: "https://github.com/aryansri0208/chess-ai" }
+      { text: "GitHub Repository (Google Colab)", url: "https://github.com/aryansri0208/ECE570-Maia-2Reimplementation" },
+      { text: "GitHub Repository (Project)", url: "https://github.com/aryansri0208/ECE570-ChessAI" },
+      { text: "Research Paper", url: "https://drive.google.com/file/d/1gnC-FuvcmfHiJd0qCiXzGjfcq1ag1wU2/view?usp=sharing" },
+      { text: "Demo Video", url: "https://youtu.be/LEVqNCh-tCM" }
     ],
     gallery: [
       `${process.env.PUBLIC_URL}/gui.png`
@@ -748,7 +752,8 @@ const projectData = {
       }
     ],
     links: [
-      { text: "Project Documentation", url: "https://github.com/aryansri0208/ECE362_Project_BallBreaker" }
+      { text: "Github Repository", url: "https://github.com/aryansri0208/ECE362_Project_BallBreaker" },
+      { text: "Demo Video", url: "https://drive.google.com/file/d/1ILIBFqoTis92irTvmE9FChc3i6F87m7S/view?usp=sharing" }
     ],
     gallery: [
       `${process.env.PUBLIC_URL}/image.png`
@@ -861,7 +866,7 @@ const projectData = {
       }
     ],
     links: [
-      { text: "Project Documentation", url: "https://github.com/aryansri0208/ECE368" }
+      { text: "Github Repository", url: "https://github.com/aryansri0208/ECE-368" }
     ],
     gallery: [
       `${process.env.PUBLIC_URL}/DSA.png`
@@ -974,10 +979,11 @@ const projectData = {
       }
     ],
     links: [
-      { text: "Project Documentation", url: "https://github.com/aryansri0208/VIPResearch" }
+      { text: "Research Poster", url: "https://docs.google.com/presentation/d/1OblPKfTTQifj61anK6l47aZSpbQi52Tb/edit?usp=sharing&ouid=109427904131836077744&rtpof=true&sd=true" }
     ],
     gallery: [
-      `${process.env.PUBLIC_URL}/UAV.png`
+      `${process.env.PUBLIC_URL}/UAV.png`,
+      `${process.env.PUBLIC_URL}/UAV2.png`
     ]
   },
   ECE362: {
@@ -1150,7 +1156,7 @@ const projectData = {
       }
     ],
     links: [
-      { text: "Project Documentation", url: "https://github.com/aryansri0208/ECE362" }
+      { text: "Github Repository", url: "https://github.com/aryansri0208/ECE362" }
     ],
     gallery: [
       `${process.env.PUBLIC_URL}/ECE362.jpeg`
@@ -1280,7 +1286,7 @@ const projectData = {
       }
     ],
     links: [
-      { text: "Project Documentation", url: "https://github.com/aryansri0208/ECE570" }
+      { text: "Github Repository", url: "https://github.com/aryansri0208/ECE570" }
     ],
     gallery: [
       `${process.env.PUBLIC_URL}/ECE570.png`
@@ -1452,7 +1458,7 @@ const projectData = {
       }
     ],
     links: [
-      { text: "GitHub Repository", url: "https://github.com/aryansri0208/ECE39595" }
+      { text: "GitHub Repository", url: "https://github.com/aryansri0208/ECE-39595" }
     ],
     gallery: [
       `${process.env.PUBLIC_URL}/ECE39595.png`
@@ -1650,7 +1656,7 @@ const projectData = {
       }
     ],
     links: [
-      { text: "GitHub Repository", url: "https://github.com/aryansri0208/ECE270" }
+      { text: "GitHub Repository", url: "https://github.com/aryansri0208/ECE-270" }
     ],
     gallery: [
       `${process.env.PUBLIC_URL}/ECE270.png`
@@ -1807,7 +1813,7 @@ const projectData = {
       }
     ],
     links: [
-      { text: "GitHub Repository", url: "https://github.com/aryansri0208/ECE20875" }
+      { text: "GitHub Repository", url: "https://github.com/aryansri0208/ECE-20875" }
     ],
     gallery: [
       `${process.env.PUBLIC_URL}/ECE20875.png`

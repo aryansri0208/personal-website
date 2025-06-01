@@ -6,22 +6,40 @@ import "./Music.css"; // Assuming you have a Music.css file for styling
 const videos = [
   {
     id: "1",
-    title: "Fusion of Tabla with English Music",
-    description: "A fusion of Tabla and English music, creating a unique blend.",
-    url: "https://www.youtube.com/embed/examplevideo1", // Replace with your actual YouTube embed link
+    title: "International Tabla Competition Performance",
+    description: "Performed in Dubai at the ABSS International Tabla Competition and won the second position",
+    url: "https://www.youtube.com/embed/ci5yyxhXsOs"
   },
   {
     id: "2",
-    title: "Live Tabla Performance",
-    description: "A live performance of Tabla in a traditional setting.",
-    url: "https://www.youtube.com/embed/examplevideo2", // Replace with your actual YouTube embed link
+    title: "Tabla Fusion Performance (Sajan Bin)",
+    description: "An innovative fusion performance showcasing the versatility of Tabla.",
+    url: "https://www.youtube.com/embed/1Qvl8hJyJwI"
   },
   {
     id: "3",
-    title: "Tabla and Beatbox Fusion",
-    description: "A fusion of Tabla and beatboxing, an experimental performance.",
-    url: "https://www.youtube.com/embed/examplevideo3", // Replace with your actual YouTube embed link
+    title: "Tabla Fusion Performance (Love by Kendrick Lamar)",
+    description: "A creative blend of traditional Tabla rhythms with modern musical elements.",
+    url: "https://www.youtube.com/embed/wbTZ3P1mymg"
   },
+  {
+    id: "4",
+    title: "Tabla Fusion Performance (Dont Start Now by Dua Lipa)",
+    description: "A fusion of Tabla and English music, creating a unique blend.",
+    url: "https://www.youtube.com/embed/uWfI_yykFuU"
+  },
+  {
+    id: "5",
+    title: "Tabla Fusion Performance (Psycho by Post Malone)",
+    description: "A mixture of Indian and Western music",
+    url: "https://www.youtube.com/embed/aEB8i1pd7Vc?start=73"
+  },
+  {
+    id: "6",
+    title: "Tabla Fusion Performance (Ek Zindagi by Angrezi Medium)",
+    description: "A fusion of Tabla and modern Bollywood music",
+    url: "https://www.youtube.com/embed/At27E4Cr2To"
+  }
 ];
 
 const Music = () => {

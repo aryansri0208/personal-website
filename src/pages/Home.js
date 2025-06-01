@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa"; // Import social media icons from react-icons
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa"; // Import social media icons from react-icons
 import "./Home.css";
 
 const projects = [
-  { id: "Grocio", title: "Grocio", description: "Grocio is an AI-powered pantry assistant that tracks inventory, reduces food waste, and simplifies grocery planning. Built with Flutter, it uses Firebase for authentication and Firestore for data storage. OpenAI’s GPT powers recipe suggestions, and a chatbot assists with meal planning. WorkManager and Flutter Local Notifications automate reminders for expiring or low-stock items.", image: `${process.env.PUBLIC_URL}/grocio.png` },
+  { id: "Grocio", title: "Grocio", description: "Grocio is an AI-powered pantry assistant that tracks inventory, reduces food waste, and simplifies grocery planning. Built with Flutter, it uses Firebase for authentication and Firestore for data storage. OpenAI's GPT powers recipe suggestions, and a chatbot assists with meal planning. WorkManager and Flutter Local Notifications automate reminders for expiring or low-stock items.", image: `${process.env.PUBLIC_URL}/grocio.png` },
   { id: "Investment_Advisor", title: "Investment Advisor", description: "Brief description of project 2", image: `${process.env.PUBLIC_URL}/AAPL_Prophet_Prediction.png` },
   { id: "ECE_Soft", title: "Trustworthy Module Registry ", description: "Brief description of project 3", image: `${process.env.PUBLIC_URL}/Internal Package Management .jpg` }
 ];
@@ -41,11 +41,11 @@ const Home = () => {
 
         {/* Social Media Icons */}
         <div className="social-icons">
-          <a href="https://www.linkedin.com/in/aryansri0208" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a href="https://www.linkedin.com/in/aryan-srivastava-9b1664185/" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaLinkedin size={30} />
           </a>
-          <a href="https://www.instagram.com/aryansri0208" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <FaInstagram size={30} />
+          <a href="https://github.com/aryansri0208" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <FaGithub size={30} />
           </a>
           <a href="mailto:aryansri0208@gmail.com" className="social-icon">
             <FaEnvelope size={30} />
